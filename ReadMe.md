@@ -52,7 +52,7 @@ Aim - Functionally validate the API
 
 Test the API with the following functional parameters using test cases as listed below: 
 
-Validate if API is returning correct response code(200) with valid api key.
+Validate if API is returning correct response code(200) with valid api key.<br>
 Validate if API is returning correct response code with valid Date.
 Validate if API is returning correct response code when hd is set to true.
 Validate if API is returning correct response code when hd is set to false.
