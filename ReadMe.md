@@ -23,7 +23,7 @@ OR
 
 -- Open cmd and go to the project location
 -- type "mvn test" to run the code
---  Code can also be run from eclipse by right clicking on testng.xml and run as testNG suite.
+-- Code can also be run from eclipse by right clicking on testng.xml and run as testNG suite.
 
 
 # Requirements
@@ -31,7 +31,7 @@ OR
 
 - A stable internet connection
 - Maven should be up on the system
--Postman for verifying the reponse of api's manually
+- Postman for verifying the reponse of api's manually
 
 
 # Build
@@ -78,6 +78,6 @@ Based on above params we will create performance script and try to validate the 
 
 API : https://api.nasa.gov/planetary/apod   
 
-Tools Used - Java, Rest Assured, TestNG,Maven
+Tools Used - Java, Rest Assured, TestNG,Maven <br>
 Aim - to automate the functional test cases 
 
