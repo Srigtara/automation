@@ -15,11 +15,9 @@
     <classes>
       <class name="tests.TestUserDetails">
         <methods>
-          <include name="validate_New_User_creation_Functionality_Is_Working_Fine"/>
+          <include name="validate_APOD_API_is_Returning_400_With_FUTUREDATE"/>
           <include name="setUp"/>
-          <include name="validate_Status_Code_Of_Valid_Get_Request"/>
           <include name="tearDown"/>
-          <include name="validate_Delete_User_Functionality_Is_Working_Fine"/>
         </methods>
       </class> <!-- tests.TestUserDetails -->
     </classes>

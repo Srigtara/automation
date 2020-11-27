@@ -3,13 +3,17 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="tests.TestUserDetails">
+      <class name="tests.TestApod">
         <methods>
-          <include name="setUp"/>
-          <include name="validate_APOD_API_is_Returning_Valid_Response"/>
+          <include name="validate_APOD_API_Is_returning_200_InCase_of_Concept_tag_False"/>
+          <include name="validate_APOD_API_is_Returning_400_InCase_of_Past_Date"/>
+          <include name="validate_APOD_API_is_Returning_400_InCase_of_HD_False"/>
           <include name="tearDown"/>
+          <include name="validate_APOD_API_is_Returning_400_InCase_of_Future_Date"/>
+          <include name="validate_APOD_API_InCase_of_HD_Concept_Tag_False"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- tests.TestUserDetails -->
+      </class> <!-- tests.TestApod -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

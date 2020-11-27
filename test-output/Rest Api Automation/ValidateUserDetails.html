@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ValidateUserDetails</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 26 01:32:52 IST 2020</td>
+<td>Started on:</td><td>Fri Nov 27 01:09:10 PST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5908 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9581 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>smoke functionalTest </td>
 </tr><tr>
@@ -67,6 +67,52 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_400_With_FUTUREDATE()'><b>validate_APOD_API_is_Returning_400_With_FUTUREDATE</b><br>Test class: tests.TestUserDetails</td>
+<td><div><pre>java.lang.AssertionError: 400 not returned expected [400] but found [200]
+	at tests.TestUserDetails.validate_APOD_API_is_Returning_400_With_FUTUREDATE(TestUserDetails.java:109)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace280078161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace280078161'><pre>java.lang.AssertionError: 400 not returned expected [400] but found [200]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at tests.TestUserDetails.validate_APOD_API_is_Returning_400_With_FUTUREDATE(TestUserDetails.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,20 +121,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.TestUserDetails.validate_Delete_User_Functionality_Is_Working_Fine()'><b>validate_Delete_User_Functionality_Is_Working_Fine</b><br>Test class: tests.TestUserDetails</td>
+<td title='tests.TestUserDetails.validate_APOD_APIKEY_is_Returning_Valid_Response()'><b>validate_APOD_APIKEY_is_Returning_Valid_Response</b><br>Test class: tests.TestUserDetails</td>
 <td></td>
-<td>3</td>
-<td>tests.TestUserDetails@491666ad</td></tr>
+<td>5</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
 <tr>
-<td title='tests.TestUserDetails.validate_New_User_creation_Functionality_Is_Working_Fine()'><b>validate_New_User_creation_Functionality_Is_Working_Fine</b><br>Test class: tests.TestUserDetails</td>
-<td></td>
-<td>1</td>
-<td>tests.TestUserDetails@491666ad</td></tr>
-<tr>
-<td title='tests.TestUserDetails.validate_Status_Code_Of_Valid_Get_Request()'><b>validate_Status_Code_Of_Valid_Get_Request</b><br>Test class: tests.TestUserDetails</td>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_403InCase_of_Invalid_API_Key()'><b>validate_APOD_API_is_Returning_403InCase_of_Invalid_API_Key</b><br>Test class: tests.TestUserDetails</td>
 <td></td>
 <td>0</td>
-<td>tests.TestUserDetails@491666ad</td></tr>
+<td>tests.TestUserDetails@358c99f5</td></tr>
+<tr>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_403_With_DATEBEFORE_SERVICESTARTED()'><b>validate_APOD_API_is_Returning_403_With_DATEBEFORE_SERVICESTARTED</b><br>Test class: tests.TestUserDetails</td>
+<td></td>
+<td>0</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
+<tr>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_403_With_EMPTYFIELDS()'><b>validate_APOD_API_is_Returning_403_With_EMPTYFIELDS</b><br>Test class: tests.TestUserDetails</td>
+<td></td>
+<td>0</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
+<tr>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_403_With_FUTUREDATE()'><b>validate_APOD_API_is_Returning_403_With_FUTUREDATE</b><br>Test class: tests.TestUserDetails</td>
+<td></td>
+<td>0</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
+<tr>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_404_With_Missing_Date_Value()'><b>validate_APOD_API_is_Returning_404_With_Missing_Date_Value</b><br>Test class: tests.TestUserDetails</td>
+<td></td>
+<td>0</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
+<tr>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_Valid_Response()'><b>validate_APOD_API_is_Returning_Valid_Response</b><br>Test class: tests.TestUserDetails</td>
+<td></td>
+<td>0</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
+<tr>
+<td title='tests.TestUserDetails.validate_APOD_API_is_Returning_Valid_Response1()'><b>validate_APOD_API_is_Returning_Valid_Response1</b><br>Test class: tests.TestUserDetails</td>
+<td></td>
+<td>0</td>
+<td>tests.TestUserDetails@358c99f5</td></tr>
 </table><p>
 </body>
 </html>
