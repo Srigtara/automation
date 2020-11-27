@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rest Api Automation">
+	<listeners>
+		<listener class-name="utils.TestListener" />
+		<listener class-name="utils.SuiteListener" />
+	</listeners>
+	<test name="ValidateUserDetails">
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="functionalTest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.TestUserDetails" />
+		</classes>
+	</test>
+</suite> 
