@@ -2,23 +2,23 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-26T08:59:33Z" name="Default suite" finished-at="2020-11-26T09:00:14Z" duration-ms="41283">
+  <suite started-at="2020-11-27T08:46:49Z" name="Default suite" finished-at="2020-11-27T08:47:01Z" duration-ms="12205">
     <groups>
       <group name="smoke">
-        <method signature="TestUserDetails.validate_Status_Code_Of_Valid_Get_Request()[pri:0, instance:tests.TestUserDetails@8462f31]" name="validate_Status_Code_Of_Valid_Get_Request" class="tests.TestUserDetails"/>
+        <method signature="TestUserDetails.validate_APOD_API_is_Returning_Valid_Response()[pri:0, instance:tests.TestUserDetails@6392827e]" name="validate_APOD_API_is_Returning_Valid_Response" class="tests.TestUserDetails"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2020-11-26T08:59:33Z" name="Default test" finished-at="2020-11-26T09:00:14Z" duration-ms="41283">
+    <test started-at="2020-11-27T08:46:49Z" name="Default test" finished-at="2020-11-27T08:47:01Z" duration-ms="12205">
       <class name="tests.TestUserDetails">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TestUserDetails@8462f31]" started-at="2020-11-26T14:29:33Z" name="setUp" finished-at="2020-11-26T14:29:38Z" duration-ms="5497" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TestUserDetails@6392827e]" started-at="2020-11-27T14:16:49Z" name="setUp" finished-at="2020-11-27T14:16:54Z" duration-ms="5499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validate_Status_Code_Of_Valid_Get_Request()[pri:0, instance:tests.TestUserDetails@8462f31]" started-at="2020-11-26T14:29:38Z" name="validate_Status_Code_Of_Valid_Get_Request" finished-at="2020-11-26T14:30:13Z" duration-ms="35028" status="PASS">
+        <test-method signature="validate_APOD_API_is_Returning_Valid_Response()[pri:0, instance:tests.TestUserDetails@6392827e]" started-at="2020-11-27T14:16:54Z" name="validate_APOD_API_is_Returning_Valid_Response" finished-at="2020-11-27T14:17:00Z" duration-ms="5963" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_Status_Code_Of_Valid_Get_Request -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestUserDetails@8462f31]" started-at="2020-11-26T14:30:13Z" name="tearDown" finished-at="2020-11-26T14:30:14Z" duration-ms="735" status="PASS">
+        </test-method> <!-- validate_APOD_API_is_Returning_Valid_Response -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestUserDetails@6392827e]" started-at="2020-11-27T14:17:00Z" name="tearDown" finished-at="2020-11-27T14:17:01Z" duration-ms="718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -4,7 +4,9 @@ import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 
@@ -104,6 +106,16 @@ public class CommonUtilities {
 
 	public static void flushMap(Map map) {
 		map.clear();
+	}
+
+	public static Map<String, String> getQueryParams(String api_key, String date, String hd, String concept) {
+		Map<String, String> queryParamMap = new HashMap<String, String>();
+		ReadPropertyFile properties = new ReadPropertyFile();
+		queryParamMap.put("api_key", properties.getProperty(api_key));
+		queryParamMap.put("date", properties.getProperty(date));
+		queryParamMap.put("hd", properties.getProperty(hd));
+		queryParamMap.put("concept_tags", properties.getProperty(concept));
+		return queryParamMap;
 	}
 
 }

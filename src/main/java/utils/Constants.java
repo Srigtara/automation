@@ -10,7 +10,8 @@ public interface Constants {
 	public int VALID_POST_REQUEST_CODE = 201;
 	public int VALID_DELETE_REQUEST_CODE = 200;
 	public int ERROR_CODE_NOT_FOUND = 404;
-	public int ERROR_FORBIDEN = 404;
+	public int ERROR_FORBIDEN = 403;
+	public int ERROR_BADREQUEST = 400;
 	public int TIMEOUT = 5000;
 	public String PATH_TO_CONFIG_FILE = "/src/main/resources/config.properties";
 	public String PATH_TO_TEST_DATA_FILE = "/src/main/resources/testData.properties";
