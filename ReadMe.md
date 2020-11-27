@@ -53,19 +53,19 @@ Aim - Functionally validate the API
 Test the API with the following functional parameters using test cases as listed below: 
 
 Validate if API is returning correct response code(200) with valid api key.<br>
-Validate if API is returning correct response code with valid Date.
-Validate if API is returning correct response code when hd is set to true.
-Validate if API is returning correct response code when hd is set to false.
-Validate if API is returning correct response code when concept_tag is set to true.
-Validate if API is returning correct response code when concept_tag is set to false.
-Validate  if API is returning error response code when entered  Out of range (before June 16, 1995 )
-Validate  if API is returning error response code when entered   future dates.
-Validate  if API is returning error response code with incorrect format.
-Validate if API is returning correct response codes when checked with boundary conditions  of  Date:
-Verify when the date is set to   Jun 16, 1995
- Verify when the date is set to Jun 15, 1995
-Verify when the date is set to today's date 
-Verify when the date is set to tomorrow's date.
+Validate if API is returning correct response code with valid Date.<br>
+Validate if API is returning correct response code when hd is set to true.<br>
+Validate if API is returning correct response code when hd is set to false.<br>
+Validate if API is returning correct response code when concept_tag is set to true.<br>
+Validate if API is returning correct response code when concept_tag is set to false.<br>
+Validate  if API is returning error response code when entered  Out of range (before June 16, 1995 )<br>
+Validate  if API is returning error response code when entered   future dates.<br>
+Validate  if API is returning error response code with incorrect format.<br>
+Validate if API is returning correct response codes when checked with boundary conditions  of  Date:<br>
+Verify when the date is set to   Jun 16, 1995<br>
+Verify when the date is set to Jun 15, 1995<br>
+Verify when the date is set to today's date <br>
+Verify when the date is set to tomorrow's date.<br>
 
 
 Performance Testing : Verify the performance of the API with parameters - Response time, Throughput and User Load. Create performance scripts based on above params and try to validate the actual results.
