@@ -12,12 +12,7 @@ public class HttpClientHandler {
 
 	static String baseURI = Constants.BASE_URL;
 
-	/**
-	 * GET call
-	 * 
-	 * @param resource
-	 * @return
-	 */
+	// get call
 	public static Response requestGetCall(String resource, Map<String,String> queryParamMap) {
 		Response response = RestAssured.given().headers("Content-Type", ContentType.JSON, "Accept", ContentType.JSON).queryParams(queryParamMap).
 				log().all().when().get(baseURI + resource).then().contentType(ContentType.JSON).log().all().extract()
